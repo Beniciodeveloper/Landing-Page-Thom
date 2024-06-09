@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THOM - Car Repair Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <div class="popUp hidden" id="popUp">
+        <button class="close-btn" onclick="closePopUp()">&times;</button>
+        <h2>Formulário</h2>
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="numero">Número</label>
+            <input type="text" id="numero" name="numero" required>
+
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" name="cpf" required>
+
+            <label for="dataNascimento">Data de Nascimento</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <header>
+        <nav class="navigation">
+            <div>
+                <img class="logo" src="./image/Logo Thom.png" alt="">
+            </div>
+            <ul class="nav-links">
+                <li class="transition-item"><a href="#">Home</a></li>
+                <li class="transition-item"><a href="#">Serviços</a></li>
+                <li class="transition-item"><a href="#">Sobre Nós </a></li>
+                <li class="transition-item"><a href="#">Depoimentos</a></li>
+                <li class="transition-item"><a href="#">Mais</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="bg-fundo">
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>As expectativas do projeto THOM para os usuários são fornecer uma solução abrangente e eficaz
+                        para a gestão de veículos, que melhore a eficiência operacional, reduza custos, aumente a
+                        segurança e promova a sustentabilidade. <br>
+                        <br>Através de tecnologia avançada e suporte dedicado, o
+                        THOM está posicionado para transformar a forma como os usuários gerenciam suas frotas,
+                        oferecendo ferramentas e percepções avançadas para melhorar suas operações.</h1>
+                    <button onclick="openPopUp()"  id="btn">Entre em contato</button>
+                </div>
+            </section>
+    </div>
+
+
+
+    <section class="services ">
+        <div class="service-box transition-item">
+            <div class="icon">🔧</div>
+            <h2>Manutenção Preventiva</h2>
+        </div>
+        <div class="service-box transition-item">
+            <div class="icon">🚗</div>
+            <h2>Reparos Comuns</h2>
+        </div>
+        <div class="service-box transition-item">
+            <div class="icon">⚙️</div>
+            <h2>Detalhamento Interno</h2>
+        </div>
+        <div class="service-box transition-item">
+            <div class="icon">⚡</div>
+            <h2>Reparo de Transmissão</h2>
+        </div>
+        <div class="service-box transition-item">
+            <div class="icon">🗺</div>
+            <h2>Gestão de Frotas</h2>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+
+    
+</body>
+
+<script>
+    function openPopUp() {
+        var popUp = document.getElementById('popUp');
+        popUp.classList.remove('hidden');
+    }
+
+    function closePopUp() {
+        var popUp = document.getElementById('popUp');
+        popUp.classList.add('hidden');
+    }
+
+   
+
+
+</script>
+
+</html>

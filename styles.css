@@ -1,0 +1,251 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Impede a rolagem da barra de rolagem */
+}
+
+.bg-fundo {
+    background-image: url('image/imagem fundo carro.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    overflow: hidden; /* Impede a rolagem da barra de rolagem */
+}
+
+.hidden{
+    display: none;
+}
+
+header {
+    color: white;
+    padding: 15px 0;
+    background-color: #262427;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+   
+}
+
+.logo {
+    height: 70px;
+    margin-left: 60px;
+    
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.transition-item {
+    transition: transform 0.3s ease;
+}
+
+.transition-item:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    max-width: 1200px;
+    font-size: 12px;
+    overflow: hidden; /* Impede a rolagem da barra de rolagem */
+}
+
+.hero-content {
+    background-color: rgba(66, 63, 63, 0.9);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero h1 span {
+    color: #6b28d6;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #6b28d6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight:bold;
+    margin-top: 10px;
+    border-radius: 40px;
+   
+    height: 70px;
+}
+
+
+
+.services {
+    display: flex;
+    
+    padding: 20px 0;
+    background-color: #f4f4f4;
+    background-color: #333;
+
+    justify-content: center;
+    align-items: center;
+
+
+    
+}
+
+.service-box {
+    background-color: #6b28d6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+    margin: 0 10px;
+    width: 300px;
+    height: 1000px;
+
+    
+}
+
+.service-box .icon {
+    font-size: 2em;
+}
+
+.service-box h2 {
+    margin: 10px 0 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+
+    width: 100%;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.popUp {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 60vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popUp h2 {
+    margin-top: 0;
+}
+
+.popUp label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.popUp input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popUp button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 80%;
+  
+}
+
+.popUp button:hover {
+    background-color: #0056b3;
+}
+
+form{
+    width: 55vh;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+   
